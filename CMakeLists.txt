@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(third_party/CMakeLists.txt)
 
 # Add executable
-add_executable(ied_exe src/main.cpp)
+add_executable(ied_exe src/main.cpp src/publisher.cpp src/gpio.cpp)
 
 # Add include directories
 target_include_directories(ied_exe PRIVATE include ${LIBIEC_INCLUDES})
